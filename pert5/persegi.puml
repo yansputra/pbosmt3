@@ -1,0 +1,35 @@
+@startuml persegiencap
+header 
+Pertemuan 5
+endheader
+caption copyright@esaunggul.ac.id
+legend left
+    CTI211-Pemograman Berorientasi Objek 
+endlegend
+
+class Persegi{
+    __ private data __
+    - panjang : int
+    - lebar : int
+    __ public data__
+    - p : int
+    - l : int
+    __ get data__
+    + getPanjang()
+    + getLebar()
+    __ set data__
+    + setPanjang()
+    + setLebar()
+    __ callback__
+    ~ hitungKeliling()
+    ~ hitungLuas()
+    --
+    source code pert5-1.cc
+}
+note left of Persegi
+  Bentuk encapsulation dari Class Persegi
+  Dimana method dan variabel tergabung
+  Dan menjadi satu kesatuan dalam bentuk Class
+end note
+
+@enduml
