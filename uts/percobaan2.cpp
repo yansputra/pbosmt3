@@ -12,7 +12,7 @@ class nama{
 
     public :
         void setnama(){
-            string fn,mn,ln;
+            string fn,mn,ln;1
             firstn = fn;
             middlen = mn;
             lastn = ln;
