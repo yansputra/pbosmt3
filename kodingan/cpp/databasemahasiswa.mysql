@@ -1,0 +1,41 @@
+create database akademik;
+use akademik;
+create table mahasiswa (
+    nim varchar (6) not null, 
+    nama_mahasiswa varchar (30) not null,
+    alamat_mahasiswa varchar (30) not null,
+    tgl_lahir date, 
+    primary key (nim)
+) engine InnoDB;
+select * from mahasiswa;
+show tables;
+
+create table dosen (
+    nama_dos varchar (35) not null,
+    alamat_dos varchar (60) not  null
+    )engine InnoDB;
+
+create table kuliah (
+    kode_kul varchar (6) not null,
+    nama_kul varchar (30) not null,
+    sks int not null,
+    semester int not null
+    )engine InnoDB;
+insert into 
+mahasiswa
+values 
+("1023", "narto", "jalan terbang jatuh", "2001-04-03"),
+("1220", "bijita", "jalan tarung bebas", "2001-02-12"),
+("1293", "Jorge", "jalan bocil kematian", "2001-11-10");
+select * from mahasiswa;
+show tables;
+
+insert into 
+kuliah 
+values 
+("12312", "pbo", 2, 3),
+("12998", "basis data", 3, 4),
+("12918", "stat", 2, 5),
+("12999", "agama", 2, 1);
+select * from kuliah;
+show tables;
